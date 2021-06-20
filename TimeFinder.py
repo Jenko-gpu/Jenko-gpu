@@ -22,11 +22,15 @@ class TimeFinder:
                     else:
                         print("-")
                 else:
-                    _hours=int(words[ind])+self.PARTS_OF_DAY[words[ind+1]]
-                    if _hours>24:
-                        print("-")
-                    else:
-                        print(Time(_hours))
+                    if ind+1<len(words):
+                        if words[ind+1] in self.PARTS_OF_DAY.keys():
+                            _hours=int(words[ind])+self.PARTS_OF_DAY[words[ind+1]]
+                            if _hours>24:
+                                print("-")
+                            else:
+                                print(Time(_hours))
+                        else:
+                            print("-")
 
     
 TimeFinder(input())
