@@ -30,3 +30,4 @@ class TimeFinder:
 
     
 TimeFinder(input())
+# Проверка коммитов
