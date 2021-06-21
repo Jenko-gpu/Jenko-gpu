@@ -1,0 +1,15 @@
+{% extends 'main\layout.html' %}
+{% load static %}
+
+{% block title %}Название страницы{% endblock %}
+
+{% block body %}
+
+<h1>Заголовок</h1>
+
+<img class="main-img" src="{% static 'main\img\my_pic.png' %}">
+<p>Ответ view1: {{ view_answer1 }}</p>
+<p>Ответ view2: {{ view_answer2 }}</p>
+
+
+{% endblock %}
